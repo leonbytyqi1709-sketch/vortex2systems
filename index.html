@@ -887,7 +887,7 @@
 
         .bundles-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 32px;
         }
 
@@ -956,6 +956,10 @@
         .bundle-card:nth-child(3) .bundle-icon {
             background: linear-gradient(135deg, rgba(57, 255, 20, 0.2) 0%, rgba(0, 240, 255, 0.2) 100%);
         }
+
+        .bundle-card:nth-child(4) .bundle-icon {
+            background: linear-gradient(135deg, rgba(218, 208, 12, 0.967) 0%, rgba(0, 240, 255, 0.2) 100%);
+}
 
         .bundle-name {
             font-size: 24px;
@@ -1031,6 +1035,10 @@
             color: var(--neon-green);
         }
 
+        .bundle-card:nth-child(4) .bundle-price-value {
+            color: var(--neon-yellow);
+}
+
         .bundle-price-label {
             font-size: 14px;
             color: var(--text-tertiary);
@@ -1060,24 +1068,34 @@
         }
 
         .bundle-card:nth-child(2) .bundle-btn {
-            background: var(--gradient-purple);
-            color: var(--text-primary);
-        }
-
-        .bundle-card:nth-child(2) .bundle-btn:hover {
-            box-shadow: var(--glow-purple);
-            transform: translateY(-2px);
-        }
-
-        .bundle-card:nth-child(3) .bundle-btn {
             background: var(--bg-card-hover);
             color: var(--text-primary);
             border: 1px solid var(--border-subtle);
         }
 
+        .bundle-card:nth-child(2) .bundle-btn:hover {
+            border-color: var(--neon-purple);
+            box-shadow: var(--glow-purple);
+        }
+
+        .bundle-card:nth-child(3) .bundle-btn {
+            background: var(--gradient-purple);
+            color: var(--text-primary);
+        }
+
         .bundle-card:nth-child(3) .bundle-btn:hover {
-            border-color: var(--neon-green);
-            box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
+            box-shadow: var(--glow-purple);
+            transform: translateY(-2px);
+        }
+        
+        .bundle-card:nth-child(4) .bundle-btn {
+            background: var(--gradient-purple);
+            color: var(--text-primary);
+        }
+
+        .bundle-card:nth-child(4) .bundle-btn:hover {
+            box-shadow: var(--glow-purple);
+            transform: translateY(-2px);
         }
 
         /* ========== CONTACT SECTION ========== */
@@ -1508,7 +1526,7 @@
                     </div>
                     <div class="product-info">
                         <div class="product-category">Monitor</div>
-                        <h3 class="product-name">Vision Ultra 34 5K Curved/h3>
+                        <h3 class="product-name">Vision Ultra 34 5K Curved</h3>
                         <p class="product-desc">34" QD-OLED Ultrawide, 240Hz, 0.03ms</p>
                         <div class="product-price">1.400€</div>
                     </div>
@@ -1588,8 +1606,8 @@
                     jeden Anwendungsfall.
                 </p>
             </div>
-
             <div class="bundles-grid">
+
                 <!-- Starter Bundle -->
                 <div class="bundle-card">
                     <div class="bundle-icon">🎮</div>
@@ -1616,8 +1634,7 @@
                 </div>
 
                 <!-- Pro Bundle -->
-                <div class="bundle-card featured">
-                    <span class="bundle-popular">Beliebt</span>
+                <div class="bundle-card ">
                     <div class="bundle-icon">🔥</div>
                     <h3 class="bundle-name">Dribble Gaming</h3>
                     <p class="bundle-desc">
@@ -1642,7 +1659,8 @@
                 </div>
 
                 <!-- Ultimate Bundle -->
-                <div class="bundle-card">
+                <div class="bundle-card featured">
+                    <span class="bundle-popular">Beliebt</span>
                     <div class="bundle-icon">👑</div>
                     <h3 class="bundle-name">Ultimate Gaming & IT</h3>
                     <p class="bundle-desc">
@@ -1665,7 +1683,36 @@
                     </div>
                     <a href="hardware.html#ultimate" class="bundle-btn">Bundle ansehen</a>
                 </div>
-            </div>
+                
+                <!-- Ultimate Bundle -->
+                <div class="bundle-card featured">
+                    <span class="bundle-popular">sehr Beliebt</span>
+                    <div class="bundle-icon">🖥️</div>
+                    <h3 class="bundle-name">Ultimate IT Bundle</h3>
+                    <p class="bundle-desc">
+                        Das absolute Maximum - für IT Profis, die keine Kompromisse eingehen.
+                    </p>
+                    <div class="bundle-includes">
+                        <h4>Enthält:</h4>
+                        <ul>
+                            <li>3x Vision Ultra 34 OLED 5K Curved mit Hauptrechner</li>
+                            <li>Voro Trackpad ZX</li>
+                            <li>Alura Laptop x85</li>
+                            <li>VORTEX Triple-Arm Ultimate</li>
+                            <li>Vortex Super Office Maus und Vortex 150 Office Mega Tastatur</li>
+                            <li>Office + IT Paket 6 Jahre kostenlos</li>
+                            <li>5 HDMI Kabel</li> 
+                            <li>🎁 3x 512GB USB-Sticks</li>
+                            <li>Vortex Kabel Kit Ultimate und VORTEX Clean Kit Pro</li>
+                        </ul>
+                    </div>
+                    <div class="bundle-price">
+                        <span class="bundle-price-value">9.500€</span>
+                        <span class="bundle-price-label">Komplett</span>
+                    </div>
+                    <a href ="hardware.html#ultimate-it" class="bundle-btn">Bundle ansehen</a>
+                </div>
+            </div>  
         </div>
     </section>
 
